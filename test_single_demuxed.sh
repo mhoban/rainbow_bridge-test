@@ -1,9 +1,20 @@
 #!/usr/bin/env bash
+cmd=$(which rainbow_bridge.nf)
+prof=${1:-""}
+if [[ -n "$prof" ]]; then
+  prof="-profile $prof"
+fi
+
+if [[ -z "$cmd" ]]; then
+  cmd="nextflow run $prof mhoban/rainbow_bridge -r main"
+else
+  cmd="$cmd -profile $prof"
+fi
 
 mkdir -p single_test_demux
 cd single_test_demux
 
-../../rainbow_bridge.nf \
+$cmd \
   --single \
   --ignore-blast-env \
   --illumina-demultiplexed \
