@@ -1,0 +1,9 @@
+paired: true
+illumina-demultiplexed: true
+ignore-blast-env: true
+reads: fastq/paired_demuxed
+sample-map: data/paired_demuxed_sample.map
+barcode: data/paired_demuxed_barcode.tab
+blast-db: blastdb/paired_demuxed
+collapse-taxonomy: true
+

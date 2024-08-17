@@ -1,0 +1,7 @@
+single: true
+ignore-blast-env: true
+illumina-demultiplexed: true
+reads: 'fastq/single_demuxed/*.fastq'
+barcode: data/single_demuxed_barcode.tab
+blast-db: blastdb/single_demuxed
+collapse-taxonomy: true

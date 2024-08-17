@@ -1,0 +1,6 @@
+paired: true
+ignore-blast-env: true
+reads: fastq/paired_undemux
+barcode: 'data/pe_bc_*'
+blast-db: blastdb/paired_undemuxed
+collapse-taxonomy: true
