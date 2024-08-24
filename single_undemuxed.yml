@@ -1,5 +1,6 @@
 single: true
 ignore-blast-env: true
+demultiplexed-by: barcode
 reads: fastq/single_undemux/test_30000reads.fastq
 barcode: 'data/se_bc_*'
 blast-db: blastdb/single_undemuxed

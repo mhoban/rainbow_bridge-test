@@ -1,7 +1,7 @@
 paired: true
-illumina-demultiplexed: true
+demultiplexed-by: index
 ignore-blast-env: true
-reads: fastq/paired_demuxed
+reads: 'fastq/paired_demuxed/*{R1,R2}*.fastq.gz'
 sample-map: data/paired_demuxed_sample.map
 barcode: data/paired_demuxed_barcode.tsv
 blast-db: blastdb/paired_demuxed

@@ -1,6 +1,8 @@
 paired: true
 ignore-blast-env: true
-reads: fastq/paired_undemux
+demultiplexed-by: barcode
+fwd: fastq/paired_undemux/test_R1.fastq
+rev: fastq/paired_undemux/test_R2.fastq
 barcode: 'data/pe_bc_*'
 blast-db: blastdb/paired_undemuxed
 collapse-taxonomy: true
