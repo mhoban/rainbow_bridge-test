@@ -21,7 +21,7 @@ Here is a worked example including the sort of output you should expect to see. 
 
 ```console
 $ cd rainbow_bridge-test
-$ nextflow run -params-file single_demuxed.yml mhoban/rainbow_bridge -r main
+$ nextflow run -params-file single_demuxed.yml mhoban/rainbow_bridge
  N E X T F L O W   ~  version 24.04.3
 
 Pulling mhoban/rainbow_bridge ...
@@ -53,7 +53,7 @@ To run the test using podman with ARM processor architecture (e.g., on a Mac wit
 
 ```console
 $ cd rainbow_bridge-test
-$ nextflow run -params-file single_demuxed.yml -profile podman_arm mhoban/rainbow_bridge -r main
+$ nextflow run -params-file single_demuxed.yml -profile podman_arm mhoban/rainbow_bridge
  N E X T F L O W   ~  version 24.04.3
 
 Pulling mhoban/rainbow_bridge ...
