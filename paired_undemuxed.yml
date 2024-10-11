@@ -5,4 +5,5 @@ fwd: fastq/paired_undemux/test_R1.fastq
 rev: fastq/paired_undemux/test_R2.fastq
 barcode: 'data/pe_bc_*'
 blast-db: blastdb/paired_undemuxed
+blast: true
 collapse-taxonomy: true

@@ -4,4 +4,5 @@ demultiplexed-by: index
 reads: fastq/single_demuxed
 barcode: data/single_demuxed_barcode.tsv
 blast-db: blastdb/single_demuxed
+blast: true
 collapse-taxonomy: true
