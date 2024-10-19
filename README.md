@@ -17,6 +17,8 @@ To run the scripts, open a terminal, change into the directory where this reposi
 
 By default, the pipeline will use the singularity container engine. If you want to use podman (or a different user-defined profile), pass the appropriate profile name using the `-profile` argument to the pipeline. The profiles supported by `rainbow_bridge` out of the box (in addition to the default) are `podman_arm` and `podman_intel`, which use the podman container engine on either ARM or intel CPU architecture respectively.
 
+If you want to just test all the examples, you can run the shell script `testall.sh`. You can pass it the path to a `rainbow_bridge` script, but by default it'll use whatever's in the path.
+
 Here is a worked example including the sort of output you should expect to see. Here, the `rainbow_bridge` repository has NOT been cloned to the local machine and nextflow will pull it from github automatically:
 
 ```console
