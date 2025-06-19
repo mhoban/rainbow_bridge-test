@@ -21,8 +21,7 @@ for yml in *.yml; do
   # go into the directory and run the pipeline
   pushd test/$dir >/dev/null
   echo "running test for $dir"
-  $rb -params-file $params
-  rm $params
+  $rb -params-file $params --max-memory 100.G
   echo -e "\n\n"
   # back out to the starting dir
   popd >/dev/null

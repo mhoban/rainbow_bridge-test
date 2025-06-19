@@ -3,6 +3,7 @@ ignore-blast-env: true
 demultiplexed-by: index
 reads: fastq/single_demuxed
 barcode: data/single_demuxed_barcode.tsv
+sample-map: data/single_demuxed_sample.map
 blast-db: blastdb/single_demuxed
 blast: true
 collapse-taxonomy: true
